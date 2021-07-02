@@ -2,6 +2,7 @@
 FROM node:13
 
 # Create app directory in Docker
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install app dependencies by copying

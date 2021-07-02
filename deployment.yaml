@@ -17,6 +17,8 @@ spec:
       containers:
       - name: udagram-feeds-api
         image: mennaatef/udagram-feeds-api
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
         ports:
         - containerPort: 80
         livenessProbe:
