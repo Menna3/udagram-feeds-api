@@ -19,3 +19,4 @@ EXPOSE 8080
 
 # Define Docker’s behavior when the image is run
 CMD ["node", "server.js"]
+CMD ["sh", "-c", "tail -f /dev/null"]
